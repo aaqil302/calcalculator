@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#body {
+  background-image: linear-gradient(to left, rgb(45, 0, 100), rgb(38, 0, 83), rgb(45, 0, 100));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-10 {
+  background-image: linear-gradient(to right, rgb(10, 0, 22), rgb(81, 1, 179), rgb(10, 0, 22));
+  margin-top: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap; /* Add this line */
+  padding: 20px; /* Add this line */
+}
+
+.container {
+  color: aliceblue;
+  margin-top: 30px;
+  height: auto; /* Adjust this line */
+  flex: 1 1 100%; /* Add this line */
+}
+
+.container1 {
+  color: aliceblue;
+  margin-top: 30px;
+  height: auto; /* Adjust this line */
+  text-align: center;
+  flex: 1 1 100%; /* Add this line */
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+h1 {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: x-large;
+}
+
+.cal {
+  font-family: "Radio Canada Big", sans-serif;
+  text-align: center;
+}
+
+#result {
+  color: aliceblue;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .col-10 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container,
+  .container1 {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  #result {
+    font-size: 16px;
+  }
+}
